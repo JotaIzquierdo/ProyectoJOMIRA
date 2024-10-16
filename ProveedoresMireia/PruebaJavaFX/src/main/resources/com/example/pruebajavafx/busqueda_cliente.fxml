@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pruebajavafx.ClienteController">
+    <children>
+        <Label prefHeight="80.0" prefWidth="1280.0" style="-fx-background-color: #4C0466;" text="                 BÚSQUEDA Y LISTADO                                                                                                                                       | CLIENTE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <ImageView fitHeight="80.0" fitWidth="86.0" onMouseClicked="#inicio" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Imagenes/logoAppSinFondo.png" />
+            </image>
+        </ImageView>
+        <TextField layoutX="83.0" layoutY="113.0" prefHeight="60.0" prefWidth="1132.0" text="ID CLIENTE">
+            <font>
+                <Font size="15.0" />
+            </font></TextField>
+        <ImageView fitHeight="42.0" fitWidth="40.0" layoutX="1171.0" layoutY="124.0" onMouseClicked="#buscadorClientesTotales" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Imagenes/lupa.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="160.0" layoutX="85.0" layoutY="212.0" stroke="BLACK" strokeType="INSIDE" width="1132.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="143.0" layoutX="98.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" width="141.0" />
+        <ImageView fitHeight="132.0" fitWidth="132.0" layoutX="103.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Imagenes/imagenProveedores.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="271.0" layoutY="239.0" text="ID Cliente">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="271.0" layoutY="282.0" text="Nombre del cliente">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="271.0" layoutY="327.0" text="DNI">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="347.0" layoutY="327.0" text="Género">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button layoutX="975.0" layoutY="237.0" mnemonicParsing="false" onAction="#botonModificacion" prefHeight="6.0" prefWidth="220.0" style="-fx-background-color: #FFD700;" text="MODIFICACIÓN">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="975.0" layoutY="280.0" mnemonicParsing="false" onAction="#botonConsulta" prefHeight="21.0" prefWidth="220.0" style="-fx-background-color: #40E0D0;" text="CONSULTA">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="975.0" layoutY="325.0" mnemonicParsing="false" onAction="#botonBaja" prefHeight="25.0" prefWidth="220.0" style="-fx-background-color: #FF6347;" text="BAJA">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Circle fill="LIGHTGREEN" layoutX="1144.0" layoutY="625.0" radius="51.0" stroke="BLACK" strokeType="INSIDE" />
+        <Label layoutX="1107.0" layoutY="568.0" onMouseClicked="#addCliente" prefHeight="102.0" prefWidth="88.0" text=" +">
+            <font>
+                <Font size="60.0" />
+            </font>
+        </Label>
+        <Button layoutX="80.0" layoutY="636.0" mnemonicParsing="false" onAction="#inicioBoton" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #4C0466;" text="&lt; VOLVER" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
